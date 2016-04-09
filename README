@@ -1,22 +1,25 @@
 derbystatter: Python tools for working with WFTDA statbook spreadsheets
 
-These tools can read Excel WFTDA statbook spreadsheets, in either xlsx or xls format.
-In order to support xls format, the xlrd module must be installed on your system
-(http://pypi.python.org/pypi/xlrd).  Support for xlsx format is provided by the
-xlsx.py included with the derbystatter package (which provides a limited xlsx file
-reader capable of extracting the data from the statbook).
+These tools can read Excel WFTDA statbook spreadsheets, in either xlsx or xls
+format. In order to support xls format, the xlrd module must be installed on
+your system (http://pypi.python.org/pypi/xlrd). Support for xlsx format is
+provided by the xlsx.py included with the derbystatter package (which provides
+a limited xlsx file reader capable of extracting the data from the statbook).
 
-statbook.py provides the basic module to read the file as an object (instance of class StatBook).
-The StatBook object includes direct referencts to the IBRF, Score, Penalty, LineUp, JamTimer, 
-Actions, and Errors sheet (which are used internally), and objects for the jamTimer (one per
-period) and the home and away teams.  The teams then hold objects that ref to the data
-contained in the various sheets (with scorekeeper, penaltyTracker, lineupTracker, actions,
-and error, each a tuple of two objects, one per period).  If there isn't a lineup tracker sheet,
-it will attempt to use the scorekeeper sheet and the penalty sheets to attempt to estimate
-the lineup (taking the jammer from the scorekeeper, and then searching through all the penalties
-to find any record skaters in the desired jam).
+statbook.py provides the basic module to read the file as an object (instance
+of class StatBook). The StatBook object includes direct referencts to the IBRF,
+Score, Penalty, LineUp, JamTimer, Actions, and Errors sheet (which are used
+internally), and objects for the jamTimer (one per period) and the home and
+away teams. The teams then hold objects that ref to the data contained in the
+various sheets (with scorekeeper, penaltyTracker, lineupTracker, actions, and
+error, each a tuple of two objects, one per period). If there isn't a lineup
+tracker sheet, it will attempt to use the scorekeeper sheet and the penalty
+sheets to attempt to estimate the lineup (taking the jammer from the
+scorekeeper, and then searching through all the penalties to find any record
+skaters in the desired jam).
 
-NB: Teams contain an array of objects for each period (so the period index will be 0..1 since it is
-an array subscript).  Jam numbers are 1 based (when passed as a parameter)
+NB: Teams contain an array of objects for each period (so the period index will
+be 0..1 since it is an array subscript). Jam numbers are 1 based (when passed
+as a parameter)
 
 

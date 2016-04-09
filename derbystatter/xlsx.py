@@ -10,13 +10,27 @@ if USE_EL_TREE:
     nsP = '{http://schemas.openxmlformats.org/officeDocument/2006/relationships}'
 else:
     from xml.dom.minidom import parse
+
 import zipfile
+
+
+XL_CELL_EMPTY = 0
+XL_CELL_TEXT = 1
+XL_CELL_NUMBER = 2
+XL_CELL_DATE = 3
+XL_CELL_BOOLEAN = 4
+XL_CELL_ERROR = 5
+XL_CELL_BLANK = 6
+
+
 class xlsx:
+
     def __init__(self, fpath):
         """Open the zip file, and set up lazy caches for the xml files and specific sheets"""
         self.zf = zipfile.ZipFile(fpath,'r')
         self.xmlFiles = {}
         self.sheets = {}
+
     def xml(self, name):
         """Extra a parsed DOM of the given XML file in the archive"""
         if self.xmlFiles.has_key(name):
@@ -30,14 +44,17 @@ class xlsx:
             dom = dom.getroot()
         self.xmlFiles[name] = dom
         return dom
+
     def sharedStringElement(self):
         """Get the xlsx shared string file dom"""
         return self.xml('xl/sharedStrings.xml')
+
     def sharedStringWithIndex(self, index):
         """Find a given shared string by index"""
         if USE_EL_TREE:
             return self.sharedStringElement().findall(nsS + 'si')[index]
         return self.sharedStringElement().getElementsByTagName('si')[index]
+
     def sheet_by_name(self, name):
         """Find a specific sheet in the xlsx file by name"""
         if not self.sheets:
@@ -77,18 +94,23 @@ class xlsx:
             relXML = self.xml('xl/' + '/'.join(relsPathParts))
             value['rels' ] = relXML
         return value['sheet']
+
     def relsForSheet(self, sheet):
         for value in self.sheets.values():
             if value.get('sheet') == sheet:
                 return value.get('rels')
         return None
+
+
 class xlsxSheet:
     """Represents a specific sheet in the workbook"""
+
     def __init__(self, xml, document, path):
         self.xml = xml
         self.book = document
         self.rows = []
         self.path = path
+
     def allComments(self):
         """Get all the comments for this sheet"""
         rels = self.book.relsForSheet(self)
@@ -110,6 +132,7 @@ class xlsxSheet:
                                 commentText += i
                         retval[comment.get('ref')] = commentText
             return retval
+
     def row(self, rowIndex):
         """Get a specific row in the sheet"""
         if not self.rows:
@@ -135,13 +158,15 @@ class xlsxSheet:
                     for elc in el.getElementsByTagName('c'):
                         rname = elc.attributes['r'].value
                         cols[rname[:-rlen]] = elc
-# check for shared formulas
+        # check for shared formulas
         return self.rows[rowIndex]
+
     def colName(self, colIndex):
         """Convert a colIndex (0..25, etc...) as A..Z, AA..ZZ"""
         if colIndex < 26:
             return chr(ord('A') + colIndex)
         return chr(ord('A') + colIndex / 26 - 1) + chr(ord('A') + colIndex % 26)
+
     def cell(self, rowIndex, colIndex):
         """Get the data of a specific cell by row and column (zero based)"""
         row = self.row(rowIndex+1)
@@ -158,7 +183,6 @@ class xlsxSheet:
                 print "Cell",colName,rowIndex+1,"has si:",cell.toxml()
             v = cell.getElementsByTagName('v')
         if not v:       
-            #            print "No V for:",cell.toxml()
             return empty_cell
         if USE_EL_TREE:
             v = v[0].text
@@ -169,7 +193,6 @@ class xlsxSheet:
                     return xlsxValue(XL_CELL_TEXT,self.book.sharedStringWithIndex(v)[0].text)
                 if cellType == 'str':
                     return xlsxValue(XL_CELL_TEXT, v)
-    #            print "cell",rowIndex, colIndex, cellType, v
         else:
             v = v[0].firstChild.toxml()
             if cell.attributes.has_key('t'):
@@ -179,13 +202,16 @@ class xlsxSheet:
                     return xlsxValue(XL_CELL_TEXT,self.book.sharedStringWithIndex(v).firstChild.firstChild.toxml())
                 if cellType == 'str':
                     return xlsxValue(XL_CELL_TEXT, v)
-    #            print "cell",rowIndex, colIndex, cellType, v
         return xlsxValue(XL_CELL_NUMBER,float(v))
+
+
 class xlsxValue:
     """Represents the contents of a given cell in a sheet, as a type and value"""
+
     def __init__(self,type,value):
         self.type = type
         self.value = value
+
     def __repr__(self):
         if self.type == XL_CELL_EMPTY:
             return "<EMPTY>"
@@ -196,24 +222,16 @@ class xlsxValue:
         if self.type == XL_CELL_ERROR:
             return "<ERROR " + self.value + ">"
         return "<???>"
-XL_CELL_EMPTY = 0
-XL_CELL_TEXT = 1
-XL_CELL_NUMBER = 2
-XL_CELL_DATE = 3
-XL_CELL_BOOLEAN = 4
-XL_CELL_ERROR = 5
-XL_CELL_BLANK = 6
+
 empty_cell = xlsxValue(XL_CELL_EMPTY,u'')
 
 def open_workbook(f):
     return xlsx(f)
+
+
 if __name__ == '__main__':
-#    x = xlsx('/Users/gandreas/Downloads/STATS-110513_FairbanksRollerGirls_vs_RageCityRollergirls.xlsx')
     x = xlsx('/Users/gandreas/Documents/STATS-2014-04-27-NorthStarRollerGirls_vs_OldCapitolCityRollerGirls.xlsx')
-    #print x.sharedStringElement().toxml()
-    #print x.sharedStringWithIndex(5).toxml()
     IBRF = x.sheet_by_name("IGRF")
-    #print IBRF.row(3)['B'].toxml()
 
     print IBRF.cell(2,1)
     print IBRF.cell(4,1)

@@ -1,20 +1,13 @@
+import os
+import time
 import sys
+import xlrd
+import xlsx
+
+# TODO(dk): reduce scope of this workaround, it limits usage to Python 2.x
 reload(sys)
-sys.setdefaultencoding( "utf-8" ) # since there can easily be UTF8 characters in the file
+sys.setdefaultencoding('utf-8')
 
-
-import cgitb
-cgitb.enable(format='text')
-
-
-def ColsFromCode(c):
-    retval = 0
-    if len(c) == 0:
-        return 0
-    if len(c) == 1:
-        return (ord(c) - ord('A'))
-    if len(c) == 2:
-        return (ord(c[0]) - ord('A') + 1) * 26 + (ord(c[1]) - ord('A'))
 
 PenaltyCodes = {
     '4': "Fourth Minor",
@@ -39,6 +32,18 @@ PenaltyCodes = {
     'FO': "Foul Out"
 }
 
+EmptyCellsTypes = []
+
+def ColsFromCode(c):
+    retval = 0
+    if len(c) == 0:
+        return 0
+    if len(c) == 1:
+        return (ord(c) - ord('A'))
+    if len(c) == 2:
+        return (ord(c[0]) - ord('A') + 1) * 26 + (ord(c[1]) - ord('A'))
+
+
 def CanonSkaterNumber(x):
     """Convert a skater number to a unicode string (not an int or float)"""
     if type(x) == type(1.0):
@@ -46,7 +51,8 @@ def CanonSkaterNumber(x):
     if type(x) == type(1):
         return unicode(x)
     return unicode(x)
-EmptyCellsTypes = []
+
+
 def IsBlankCell(x):
     """Is the cell blank (this will vary based on xlsx vs xls files)"""
     return x in EmptyCellsTypes or x.value == "" or x.value == " " or x.value == None
@@ -54,6 +60,7 @@ def IsBlankCell(x):
 
 class StatBookVersion:
     """An abstraction of the different versions of the statbook"""
+
     def __init__(self, workbook):
         try:
             self.version = workbook.sheet_by_name("Read ME").cell(2,0).value
@@ -62,6 +69,8 @@ class StatBookVersion:
                 self.version = workbook.sheet_by_name("Read_Me").cell(2,0).value
             except Exception:
                 self.version = workbook.sheet_by_name("Read Me").cell(2,0).value            
+
+        # set default values
         self.maxNumJams = 20
         self.maxNumPasses = 8
         self.hasNoPivot = False
@@ -73,6 +82,8 @@ class StatBookVersion:
         self.hasColors = False
         self.hasPassesInLineup = True
         self.hasActionsErrors = True
+        self.hasExtendedInfo = False
+
         if self.version == "Official October 2012 Revision":
             self.maxNumJams = 30
             self.maxNumPasses = 10
@@ -132,8 +143,10 @@ class StatBookVersion:
             self.hasPassesInLineup = False
             self.hasActionsErrors = False # no longer supported
             self.hasExtendedInfo = True # extra bout info
+
     def __str__(self):
         return self.version
+
     def Config(self, obj):
         cls = obj.__class__
         configs = {
@@ -275,7 +288,8 @@ class StatBookVersion:
         seen = []
         while cls:
             # get either name/version or name
-            config = configs.get((cls.__name__+'/'+self.version),configs.get(cls.__name__,{}))
+            config = configs.get(('%s/%s' % (cls.__name__, self.version)),
+                configs.get(cls.__name__, {}))
             for key in config:
                 if key in seen:
                     continue
@@ -289,21 +303,20 @@ class StatBookVersion:
     
 class StatBook:
     """Class representing the underlying xlsx or xls file"""
+
     def __init__(self, path):
         """Figure out if we are an xlsx or xls file and load using the appropriate library"""
         self.fileName = path
-        import os
         if os.path.splitext(path)[-1] == '.xlsx':
-            import xlsx, time
             self.workbook = xlsx.open_workbook(path)
             self.empty_cell = xlsx.empty_cell
             # this is probably off by some amount of time, but for days, we should be OK
             self.dateToTuple = lambda(x): time.localtime(x * 24 * 60 * 60 - 2209096800.0)[0:6]
         else:
-            import xlrd
             self.workbook = xlrd.open_workbook(path)
             self.empty_cell = xlrd.empty_cell
             self.dateToTuple = lambda(x): xlrd.xldate_as_tuple(x,self.workbook.datemode)
+
         global EmptyCellsTypes
         if self.empty_cell not in EmptyCellsTypes:
             EmptyCellsTypes.append(self.empty_cell)
@@ -356,7 +369,6 @@ class StatBook:
 
     def BoutInfo(self):
         """Extract basic bout info from the IBRF"""
-        import time
         bout = self.IBRF.cell(2,10)
         if bout in EmptyCellsTypes:
             bout = ""
@@ -396,9 +408,11 @@ class StatBook:
     def TitleSummary(self):
         bi = self.BoutInfo()
         return bi['date'] +":" + self.home.teamName + "(" + "%d"%self.home.TotalScore() + ") vs " + self.away.teamName + "(" + "%d"%self.away.TotalScore() + ")"
+
     def HasScoreSheets(self):
         """Is there data entered in the score sheet?"""
         return not IsBlankCell(self.Score.cell(2,0))
+
     def HasLineupSheets(self):
         """Is there data entered in the lineup sheets?"""
         if self.version.hasNoPivot: # 2012 Oct version auto include the jam number and jammer skater
@@ -414,9 +428,11 @@ class StatBook:
                     return True
             return False
         return not IsBlankCell(self.LineUp.cell(2,0))
+
     def HasPenaltySheets(self):
         """Is there data entered in the penalty tracker sheets?"""
         return True # for now
+
     def HasActionSheets(self):
         """Is there data entered in the actions sheets?"""
         if not self.hasActiosnErrors:
@@ -425,6 +441,7 @@ class StatBook:
             if not a.IsBlank():
                 return True
         return False
+
     def HasErrorSheets(self):
         """Is there data entered in the errors sheets?"""
         if not self.hasActiosnErrors:
@@ -434,12 +451,14 @@ class StatBook:
                 return True
         return False
 
+
 class Team:
     """Abstract class representing the sections of the various sheets for each team"""
     TeamIndex = 0
     IGRFSkaterFirstRow = 10
     IGRFLeagueRow = 7
     IGRFTeamRow = 8
+
     def __init__(self, book):
         self.statbook = book
         self.skaters = []
@@ -475,6 +494,7 @@ class Team:
         self.league = self.statbook.IBRF.cell(self.IGRFLeagueRow, self.IBRFCol).value
         self.team = self.statbook.IBRF.cell(self.IGRFTeamRow, self.IBRFCol).value
         self.teamName = self.league + ":" + self.team
+
     def Period(self, index):
         """Returns a tuple of the period's scorekeeper, penalty tracker, lineup tracker, actions, 
         errors.
@@ -485,18 +505,22 @@ class Team:
         index = index - 1
         return (self.scorekeeper[index],self.penaltyTracker[index], self.lineupTracker[index],
             self.actions[index], self.errors[index])
+
     def SkaterNum(self, index):
         """Returns the number for the given skater in the IBRF"""
         return self.statbook.IBRF.cell(index + self.IGRFSkaterFirstRow, self.IBRFCol)
+
     def SkaterName(self, index):
         """Returns the name for the given skater in the IBRF"""
         return self.statbook.IBRF.cell(index + self.IGRFSkaterFirstRow, self.IBRFCol+1)
+
     def SkaterForNum(self, num):
         """Gets the skater object for a given skater number on the team"""
         for sk in self.skaters:
             if sk.IsSkaterNumber(num):
                 return sk
         return None
+
     def TotalScore(self, period = None):
         """Get the total score for either both periods, or (if the optional period is passed)
         the total score for just that one period
@@ -505,6 +529,7 @@ class Team:
         if period is None:
             return self.scorekeeper[0].TotalScore() + self.scorekeeper[1].TotalScore()
         return self.scorekeeper[period].TotalScore()
+
     def TotalMajors(self, period = None):
         """Get the total score for either both periods, or (if the optional period is passed)
         the total score for just that one period
@@ -513,22 +538,27 @@ class Team:
         if period is None:
             return self.penaltyTracker[0].TotalMajors() + self.penaltyTracker[1].TotalMajors()
         return self.penaltyTracker[period].TotalMajors() 
+
     def EstimateLineUp(self):
         """Use an estimated lineup for tracker, derived from score and penalty sheets"""
         self.lineupTracker = (EstLineupTracker(self,self.scorekeeper[0], self.penaltyTracker[0]), EstLineupTracker(self,self.scorekeeper[1], self.penaltyTracker[1]))
+
 
 class HomeTeam(Team):
     """A subclass of Team representing the home team"""
     TeamIndex = 0
     IBRFCol = 1
 
+
 class AwayTeam(Team):
     """A subclass of Team representing the away team"""
     TeamIndex = 1
     IBRFCol = 7
 
+
 class Skater:
     """An object representing a skater, with a name, number(s), for a specific team"""
+
     def __init__(self, team, name, number):
         self.team = team
         self.name = name
@@ -541,6 +571,7 @@ class Skater:
             self.nameAndNumber = str(self.number)
         self.alias = [self.number]
         self.jamsSkated = None
+
     def AddAliasNumber(self, number):
         """Allows for more than one number for a given skater, for cross-bout purposes
         where the skater may skate under another number, or if the number is entered
@@ -548,14 +579,17 @@ class Skater:
         
         """
         self.alias.append(CanonSkaterNumber(number))
+
     def IsSkaterNumber(self, number):
         """Does the given number repesent the skater?"""
         return CanonSkaterNumber(number) in self.alias
+
     def __repr__(self):
         if self.name:
             return self.team.teamName + u" " + unicode(self.number) + u"(" + unicode(self.name) + u")"
         else:
             return self.team.teamName + u" " + unicode(self.number) 
+
     def JamsSkated(self):
         """Find all jams the given skater skated in"""
         if self.jamsSkated:
@@ -575,14 +609,10 @@ class Skater:
         self.jamsSkated = retval
         return retval
 
+
 class PeriodStat:
     """An abstract section (page) of a given sheet representing a given team and period"""
-    def __init__(self, sheet, teamIndex, period):
-        self.sheet = sheet
-        self.teamIndex = teamIndex
-        self.period = period
-        self.version = StatBookVersion(sheet.book)
-        self.version.Config(self)
+
     BaseRow = 0
     BaseCol = 0
     RowsPerTeam = 0
@@ -590,8 +620,17 @@ class PeriodStat:
     RowsPerJam = 0 #
     RowsPerPeriodHeader = 0
     ColsPerPeriod = 0
+
+    def __init__(self, sheet, teamIndex, period):
+        self.sheet = sheet
+        self.teamIndex = teamIndex
+        self.period = period
+        self.version = StatBookVersion(sheet.book)
+        self.version.Config(self)
+
     def RowsPerPeriod(self):
         return self.RowsPerPeriodHeader + self.version.maxNumJams * self.RowsPerJam
+
     def relcell(self, drow, dcol):
         """Get a relative cell in the period stat, supporting the various period/team row/column
         configurations of the different stat sheets
@@ -599,6 +638,7 @@ class PeriodStat:
         """
         return self.sheet.cell(self.BaseRow + self.RowsPerTeam * self.teamIndex + self.RowsPerPeriod() * self.period + drow,
                                self.BaseCol + self.ColsPerTeam * self.teamIndex + self.ColsPerPeriod * self.period + dcol)
+
 
 class Scorekeeper(PeriodStat):
     """Scorekeeper sheet information.  Records information based on jam number, with an
@@ -611,13 +651,13 @@ class Scorekeeper(PeriodStat):
     RowsPerJam = 2
     RowsPerPeriodHeader = 59 - 2 * 20
     ColsPerPass = 3
+
     def __init__(self, sheet, teamIndex, period):
         PeriodStat.__init__(self, sheet, teamIndex, period)
         self.BaseRow = 1 + self.version.headerRows
         if not self.version.hasGhostPoints:
             self.ColsPerPass = 1
-        #self.ColsPerTeam = 37 + (self.version.maxNumPasses - 8) * self.ColsPerPass
-        #self.ColsPerTeam = 13 + self.version.maxNumPasses * self.ColsPerPass
+
     def buildJamIndex(self):
         """Create the 1 based jam index (lazily) to account for star passes"""
         if not hasattr(self,'jamIndex'):
@@ -629,9 +669,11 @@ class Scorekeeper(PeriodStat):
                     self.jamIndex[ji] = i * self.RowsPerJam
                     ji = ji + 1
         return self.jamIndex
+
     def NumberOfJams(self):
         """How many jams are in the given period"""
         return len(self.buildJamIndex())
+
     def HasStarPass(self, jam):
         """Does the given jam (starting with jam 1) have a star pass"""
         ji = self.buildJamIndex().get(jam)
@@ -641,6 +683,7 @@ class Scorekeeper(PeriodStat):
         if type(v) == type("") or type(v) == type(u""):
             return v.lower() == "sp"
         return False
+
     def NumberOfPasses(self, jam, starpass = False):
         """How many passes are in the given jam
         
@@ -650,6 +693,7 @@ class Scorekeeper(PeriodStat):
             if passpts is None:
                 return ps - 1
         return self.version.maxNumPasses
+
     def JamPoints(self, jam, starpass = False):
         """How many points were scored in the given jam (or jam after star pass)"""
         ji = self.buildJamIndex().get(jam) 
@@ -657,8 +701,8 @@ class Scorekeeper(PeriodStat):
             # if we return 0, we break brecre, since the jam numbers are wrong
             # if we return None, we break some stat that adds none
             return None
-        #return self.relcell(ji + self.RowsPerJam * starpass,4 + self.ColsPerPass * self.version.maxNumPasses).value
         return self.relcell(ji + self.RowsPerJam * starpass,7 + self.ColsPerPass * (self.version.maxNumPasses-1)).value
+
     def TotalScore(self):
         """Total scores for period represented by this page of the sheet"""
         total = 0
@@ -671,12 +715,14 @@ class Scorekeeper(PeriodStat):
                 if pts:
                     total = total + pts
         return total
+
     def Jammer(self, jam, starpass = False):
         """Who was the jammer for the given jam (or star pass)"""
         ji = self.buildJamIndex().get(jam) 
         if ji is None:
             return None
         return CanonSkaterNumber(self.relcell(ji + 2 * starpass,1).value)
+
     def JamPassPoints(self, jam, pss, starpass = False):
         """How many points were scored in a given pass of a given jam"""
         ji = self.buildJamIndex().get(jam) 
@@ -686,6 +732,7 @@ class Scorekeeper(PeriodStat):
         if IsBlankCell(cell):
             return None
         return cell.value
+
     def JamPassGhostPoints(self, jam, pss, starpass = False):
         """What ghost points were recorded for a given pass of a given jam
         
@@ -709,36 +756,42 @@ class Scorekeeper(PeriodStat):
         if v:
             retval.append(v)
         return retval
+
     def JamLost(self, jam, starpass = False):
         """Was the Lost Lead cell checked for the given jam?"""
         ji = self.buildJamIndex().get(jam) 
         if ji is None:
             return None
         return len(self.relcell(ji + self.RowsPerJam * starpass, 2).value)
+
     def JamLead(self, jam, starpass = False):
         """Was the Lead cell checked for the given jam?"""
         ji = self.buildJamIndex().get(jam) 
         if ji is None:
             return None
         return len(self.relcell(ji + self.RowsPerJam * starpass, 3).value)
+
     def JamCall(self, jam, starpass = False):
         """Was the Called cell checked for the given jam?"""
         ji = self.buildJamIndex().get(jam) 
         if ji is None:
             return None
         return len(self.relcell(ji + self.RowsPerJam * starpass, 4).value)
+
     def JamInj(self, jam, starpass = False):
         """Was the Injury cell checked for the given jam?"""
         ji = self.buildJamIndex().get(jam) 
         if ji is None:
             return None
         return len(self.relcell(ji + self.RowsPerJam * starpass, 5).value)
+
     def JamNP(self, jam, starpass = False):
         """Was the No Pass cell checked for the given jam?"""
         ji = self.buildJamIndex().get(jam) 
         if ji is None:
             return None
         return len(self.relcell(ji + self.RowsPerJam * starpass, 6).value)
+
 
 class PenaltyTracker(PeriodStat):
     """Penalty tracker sheet information.  Records information based the zero based skater index
@@ -748,9 +801,11 @@ class PenaltyTracker(PeriodStat):
     BaseRow = 2
     ColsPerPeriod = 39
     RowsPerTeam = 46
+
     def __init__(self, sheet, teamIndex, period):
         PeriodStat.__init__(self, sheet, teamIndex, period)
         self.BaseRow = 1 + self.version.headerRows
+
     def Skater(self, skater):
         """Skater number from the PT sheet (just in case it is different from IGRF)
         
@@ -761,6 +816,7 @@ class PenaltyTracker(PeriodStat):
         if IsBlankCell(number):
             return None
         return CanonSkaterNumber(number.value)
+
     def MinorPenalty(self, skater, index):
         """What is the minor penalty for the given skater index and penalty index
         
@@ -774,6 +830,7 @@ class PenaltyTracker(PeriodStat):
         if IsBlankCell(jam) or jam.value == "?":
             return (code.value, 0)
         return (code.value, jam.value)
+
     def MajorPenalty(self, skater, index):
         """What is the major penalty for the given skater index and penalty index
         
@@ -792,6 +849,7 @@ class PenaltyTracker(PeriodStat):
         if IsBlankCell(jam) or jam.value == "?":
             return (code.value, 0)
         return (code.value, jam.value)
+
     def Expulsion(self, skater):
         """What is the explusion for the given skater index (if any)
         
@@ -805,6 +863,7 @@ class PenaltyTracker(PeriodStat):
         if IsBlankCell(jam) or jam.value == "?":
             return (code.value, 0)
         return (code.value, jam.value)
+
     def TotalMajors(self):
         """Total number of major penalties (including '4's)"""
         total = 0
@@ -813,6 +872,8 @@ class PenaltyTracker(PeriodStat):
                 if self.MajorPenalty(skater, pi) is not None:
                     total = total + 1
         return total
+
+
 class PenaltyTrackerNoMinors(PeriodStat):
     """Penalty tracker sheet information.  Records information based the zero based skater index
     and a zero based penalty index (routines return None if no corresponding data is found
@@ -822,8 +883,10 @@ class PenaltyTrackerNoMinors(PeriodStat):
     MajorPenaltyCount = 7
     ColsPerTeam = ColsFromCode("N")
     ColsPerPeriod = ColsFromCode("Y")
+
     def __init__(self, sheet, teamIndex, period):
         PeriodStat.__init__(self, sheet, teamIndex, period)
+
     def Skater(self, skater):
         """Skater number from the PT sheet (just in case it is different from IGRF)
         
@@ -834,6 +897,7 @@ class PenaltyTrackerNoMinors(PeriodStat):
         if IsBlankCell(number):
             return None
         return CanonSkaterNumber(number.value)
+
     def MinorPenalty(self, skater, index):
         """What is the minor penalty for the given skater index and penalty index
         
@@ -841,6 +905,7 @@ class PenaltyTrackerNoMinors(PeriodStat):
         
         """
         return None
+
     def MajorPenalty(self, skater, index):
         """What is the major penalty for the given skater index and penalty index
         
@@ -857,6 +922,7 @@ class PenaltyTrackerNoMinors(PeriodStat):
         if IsBlankCell(jam) or jam.value == "?":
             return (code.value, 0)
         return (code.value, jam.value)
+
     def Expulsion(self, skater):
         """What is the explusion for the given skater index (if any)
         
@@ -870,6 +936,7 @@ class PenaltyTrackerNoMinors(PeriodStat):
         if IsBlankCell(jam) or jam.value == "?":
             return (code.value, 0)
         return (code.value, jam.value)
+
     def TotalMajors(self):
         """Total number of major penalties (including '4's)"""
         total = 0
@@ -878,6 +945,7 @@ class PenaltyTrackerNoMinors(PeriodStat):
                 if self.MajorPenalty(skater, pi) is not None:
                     total = total + 1
         return total
+
 
 class LineupTracker(PeriodStat):
     """Similar to the Scorekeeper sheet, returns the appropriate information for a given pass
@@ -890,9 +958,11 @@ class LineupTracker(PeriodStat):
     RowsPerJam = 2
     ColsPerSkater = 3
     RowsPerPeriodHeader = 57 - 2 * 20
+
     def __init__(self, sheet, teamIndex, period):
         PeriodStat.__init__(self, sheet, teamIndex, period)
         self.BaseRow = 1 + self.version.headerRows
+
     def buildJamIndex(self):
         """Build the index of the 1-based jam lazily, to account for the star passes"""
         if not hasattr(self,'jamIndex'):
@@ -904,18 +974,17 @@ class LineupTracker(PeriodStat):
                     self.jamIndex[ji] = i * self.RowsPerJam
                     ji = ji + 1
         return self.jamIndex
+
     def LineupForJam(self, jam, starpass = False):
         """Returns the lineup (P,B,B,B,J) of the skater numbers in the given jam"""
         ji = self.buildJamIndex().get(jam)
         if ji is None:
-            #print "jam",jam,self.buildJamIndex();
             return None
         firstCol = 1
         if self.version.hasNoPivot:
             firstCol = 2
         jammer = self.relcell(ji, firstCol+self.version.lineupColumns['j'])
         if IsBlankCell(jammer):
-            #print "blank jammer for ", jam
             return None
         jammer = jammer.value
         pivot = self.relcell(ji, firstCol+self.version.lineupColumns['p']).value
@@ -923,15 +992,16 @@ class LineupTracker(PeriodStat):
         blocker3 = self.relcell(ji, firstCol+self.version.lineupColumns['3']).value
         blocker4 = self.relcell(ji, firstCol+self.version.lineupColumns['4']).value
         return (CanonSkaterNumber(pivot), CanonSkaterNumber(blocker2), CanonSkaterNumber(blocker3), CanonSkaterNumber(blocker4), CanonSkaterNumber(jammer))
+
     def JamHasPivot(self, jam):
         if not self.version.hasNoPivot:
             return True # as far as we know, it is a pivot
         ji = self.buildJamIndex().get(jam)
         if ji is None:
-            #print "jam",jam,self.buildJamIndex();
             return None
         return IsBlankCell(self.relcell(ji, 1))
         return False
+
     def PenaltyPasses(self, jam, starpass = False):
         """Returns a dictionary of the penalty box in/out passes information for the given
         jam number.  The dictionary uses the skater number as the key, whose value is a
@@ -982,17 +1052,21 @@ class LineupTracker(PeriodStat):
                     retval[sn].append((startPass.value, endPass.value))
         return retval
 
+
 class EstLineupTracker:
     """Provides a estimated lineup tracker, based on information in the scorekeeper
     sheet and penalty tracker sheet
     
     """
+
     def __init__(self, team, scorekeeper, penaltyTracker):
         self.team = team
         self.scorekeeper = scorekeeper
         self.penaltyTracker = penaltyTracker
+
     def JamHasPivot(self, jam):
         return True
+
     def LineupForJam(self, jam, starpass = False):
         """Returns the lineup (P,B,B,B,J) of the skater numbers in the given jam by
         getting the jammer from the score keeper, and finding what skaters got
@@ -1038,11 +1112,12 @@ class EstLineupTracker:
             else:
                 lineup[0] = pivot # lineup[0] better be the pivot
         return (lineup[0], lineup[1], lineup[2], lineup[3], lineup[4])
+
     def PenaltyPasses(self, jam, starpass = False):
-        """Returns a dictionary of the penalty box in/out passes information for the given
-        jam number.  Currently returns an empty dictionary if the jam appears to exist in
-        the scorekeeper sheet, or None if the jam doesn't
-        
+        """Returns a dictionary of the penalty box in/out passes information
+        for the given jam number.  Currently returns an empty dictionary if the
+        jam appears to exist in the scorekeeper sheet,
+        or None if the jam doesn't
         """
         jammer = self.scorekeeper.Jammer(jam, starpass)
         if not jammer:
@@ -1052,12 +1127,14 @@ class EstLineupTracker:
             retval[sknum] = []
         return retval
 
+
 class JamTimer(PeriodStat):
     """Represents the jam timer sheet"""
     BaseCol = 0
     BaseRow = 8
     RowsPerJam = 1
     RowsPerPeriodHeader = 36 - 20
+
     def buildJamIndex(self):
         """Builds a lazy index of the jams"""
         if not hasattr(self,'jamIndex'):
@@ -1069,6 +1146,7 @@ class JamTimer(PeriodStat):
                     self.jamIndex[ji] = i
                     ji = ji + 1
         return self.jamIndex
+
     def JamDuration(self, jam):
         """How long did the given jam last (or None if not found)"""
         ji = self.buildJamIndex()
@@ -1085,6 +1163,7 @@ class JamTimer(PeriodStat):
             if jamDuration <= 2:
                 jamDuration = round(jamDuration * 60)
         return jamDuration
+
     def JamPackLaps(self, jam):
         """How many pack laps"""
         ji = self.buildJamIndex()
@@ -1097,7 +1176,9 @@ class JamTimer(PeriodStat):
         ji = self.buildJamIndex()
         if jam > len(ji):
             return
-        return self.relcell(self.buildJamIndex()[jam], 3).value, self.relcell(self.buildJamIndex()[jam], 4).value
+        return self.relcell(self.buildJamIndex()[jam], 3).value, \
+            self.relcell(self.buildJamIndex()[jam], 4).value
+
 
 class Actions(PeriodStat):
     """Represents the action sheet"""
@@ -1105,20 +1186,21 @@ class Actions(PeriodStat):
     BaseRow = 2
     ColsPerPeriod = 9
     RowsPerTeam = 47
+
     def __init__(self, sheet, teamIndex, period):
         PeriodStat.__init__(self, sheet, teamIndex, period)
+
     def IsBlank(self):
         """Is the entire page of the sheet blank?"""
         for si in range(0,18):
             for a in self.AssistsForSkater(si):
                 if a:
-                    #print "Skater",si,"Has asisst",a
                     return False
             for a in self.AttacksForSkater(si):
                 if a:
-                    #print "Skater",si,"Has attack",a
                     return False
         return True
+
     def AssistsForSkater(self, skater):
         """Returns the assist actions count for the given skater index"""
         return [self.relcell(skater, 0).value,
@@ -1126,6 +1208,7 @@ class Actions(PeriodStat):
             self.relcell(skater, 2).value,
             self.relcell(skater, 3).value,
             self.relcell(skater, 4).value]
+
     def AttacksForSkater(self, skater):
         """Returns the assist attack count for the given skater index"""
         if self.teamIndex:
@@ -1137,15 +1220,18 @@ class Actions(PeriodStat):
             self.relcell(skater, 2).value,
             self.relcell(skater, 3).value,
             self.relcell(skater, 4).value]
+
+
 class Errors(PeriodStat):
     """Represents the errors sheet"""
     BaseCol = 2
     BaseRow = 2
     ColsPerPeriod = 9
     RowsPerTeam = 47
+
     def __init__(self, sheet, teamIndex, period):
         PeriodStat.__init__(self, sheet, teamIndex, period)
-        #self.BaseRow = 1 + self.version.headerRows
+
     def IsBlank(self):
         """Is the entire page of the sheet blank?"""
         for si in range(0,18):
@@ -1156,6 +1242,7 @@ class Errors(PeriodStat):
                 if a:
                     return False
         return True
+
     def ErrorsForSkater(self, skater):
         """Returns the errors count for the given skater index"""
         if self.teamIndex:
@@ -1167,6 +1254,7 @@ class Errors(PeriodStat):
             self.relcell(skater, 2).value,
             self.relcell(skater, 3).value,
             self.relcell(skater, 4).value]
+
     def JammerActionsForSkater(self, skater):
         """Returns the jammer actions count for the given skater index"""
         return [self.relcell(skater, 0).value,

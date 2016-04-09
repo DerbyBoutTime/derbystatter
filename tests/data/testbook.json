@@ -1,0 +1,5066 @@
+{
+    "date": "June 15, 2013",
+    "endTime": "20:30",
+    "periods": {
+        "1": {
+            "jams": [
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:3",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "3",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "P",
+                            "severity": "major",
+                            "skater": "home:1993"
+                        }
+                    ],
+                    "number": "1"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:12",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:666",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "4",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:666"
+                        }
+                    ],
+                    "number": "2"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:451"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:28",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "3",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:28"
+                        }
+                    ],
+                    "number": "3"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:451"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:MGS4"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:365",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:666",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "3",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:666"
+                        }
+                    ],
+                    "number": "4"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1098"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "4",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:3",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "M",
+                            "severity": "major",
+                            "skater": "away:620"
+                        }
+                    ],
+                    "number": "5"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1098"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "home:1098"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:1098"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:10"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:12",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "4",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:10",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "2",
+                            "skater": "away:10"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "P",
+                            "severity": "major",
+                            "skater": "home:1098"
+                        }
+                    ],
+                    "number": "6"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1098",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:1098"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:365",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:28",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "2",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:28"
+                        }
+                    ],
+                    "number": "7"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1098",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:1098"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:10",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:666",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "L",
+                            "severity": "major",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "F",
+                            "severity": "major",
+                            "skater": "away:46"
+                        }
+                    ],
+                    "number": "8"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:45",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:12",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:3",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:3"
+                        }
+                    ],
+                    "number": "9"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:451"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:10"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "1",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:10",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "1",
+                            "skater": "away:10"
+                        }
+                    ],
+                    "number": "10"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:451"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:365",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:28",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "5",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "4",
+                            "score": "2",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:28"
+                        }
+                    ],
+                    "number": "11"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:MGS4"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:5150",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:666",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "3",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "S",
+                            "severity": "major",
+                            "skater": "away:303"
+                        }
+                    ],
+                    "number": "12"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:216"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:12",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:3",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "2",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "L",
+                            "severity": "major",
+                            "skater": "away:28"
+                        }
+                    ],
+                    "number": "13"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:216"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "home:216"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:216"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:28",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:365",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "4",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:666",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "M",
+                            "severity": "major",
+                            "skater": "home:216"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "A",
+                            "severity": "major",
+                            "skater": "away:46"
+                        }
+                    ],
+                    "number": "14"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:216",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:216"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:28",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:10"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "4",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:10",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "away:10"
+                        }
+                    ],
+                    "number": "15"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:216",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:216"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:12",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "1",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:3",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "P",
+                            "severity": "major",
+                            "skater": "home:5150"
+                        }
+                    ],
+                    "number": "16"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1098"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:MGS4"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:28",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "2",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:28"
+                        }
+                    ],
+                    "number": "17"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1098"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:451"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:365",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:666",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "4",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "B",
+                            "severity": "major",
+                            "skater": "home:5150"
+                        }
+                    ],
+                    "number": "18"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:12",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:28",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "3",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:28"
+                        }
+                    ],
+                    "number": "19"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:10"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:365",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:10",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "2",
+                            "skater": "away:10"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:10"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:10"
+                        }
+                    ],
+                    "number": "20"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:MGS4"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "4",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "5",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "6",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "C",
+                            "severity": "major",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "P",
+                            "severity": "major",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "P",
+                            "severity": "major",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "X",
+                            "severity": "major",
+                            "skater": "away:666"
+                        }
+                    ],
+                    "number": "21"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:28",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:12",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "3",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:666",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "X",
+                            "severity": "major",
+                            "skater": "away:303"
+                        }
+                    ],
+                    "number": "22"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:28",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:365",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:3",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "4",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "4",
+                            "score": "1",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:3"
+                        }
+                    ],
+                    "number": "23"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1098"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:10"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:10",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "away:10"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:10"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:10"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "C",
+                            "severity": "major",
+                            "skater": "away:247"
+                        }
+                    ],
+                    "number": "24"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1098"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:365",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:666",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "3",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:666"
+                        }
+                    ],
+                    "number": "25"
+                }
+            ]
+        },
+        "2": {
+            "jams": [
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "4",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:3",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "away:3"
+                        }
+                    ],
+                    "number": "1"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:12",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "2",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:666",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "1",
+                            "skater": "away:666"
+                        }
+                    ],
+                    "number": "2"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:451"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:28",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "3",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:28"
+                        }
+                    ],
+                    "number": "3"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:451"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:MGS4"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:365",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "3",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lost",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:45",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "5",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "4",
+                            "score": "5",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "5",
+                            "score": "3",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "X",
+                            "severity": "major",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "P",
+                            "severity": "major",
+                            "skater": "home:5150"
+                        }
+                    ],
+                    "number": "4"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "4",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "5",
+                            "score": "3",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:666",
+                            "team": "away"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "X",
+                            "severity": "major",
+                            "skater": "away:40"
+                        }
+                    ],
+                    "number": "5"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1098"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:40",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:12",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "4",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:3",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "5",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "4",
+                            "score": "0",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lost",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "B",
+                            "severity": "major",
+                            "skater": "away:3"
+                        }
+                    ],
+                    "number": "6"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:3",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:3",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "away:3"
+                        }
+                    ],
+                    "number": "7"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:451"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:365",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:666",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "4",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:666"
+                        }
+                    ],
+                    "number": "8"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:451"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:12",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:28",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "C",
+                            "severity": "major",
+                            "skater": "away:223"
+                        }
+                    ],
+                    "number": "9"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:451"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:10"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:10",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "3",
+                            "skater": "away:10"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:10"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:10"
+                        }
+                    ],
+                    "number": "10"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:216"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:365",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "5",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "4",
+                            "score": "5",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lost",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:28",
+                            "team": "away"
+                        },
+                        {
+                            "event": "lost",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "X",
+                            "severity": "major",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "L",
+                            "severity": "major",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "C",
+                            "severity": "major",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "F",
+                            "severity": "major",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "F",
+                            "severity": "major",
+                            "skater": "away:28"
+                        }
+                    ],
+                    "number": "11"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:365",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:303",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:3",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:365",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:3",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "4",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "B",
+                            "severity": "major",
+                            "skater": "away:303"
+                        }
+                    ],
+                    "number": "12"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:303",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:45",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:45"
+                        }
+                    ],
+                    "number": "13"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:451"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:12",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "4",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "5",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "4",
+                            "score": "3",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "P",
+                            "severity": "major",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "B",
+                            "severity": "major",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "L",
+                            "severity": "major",
+                            "skater": "away:666"
+                        }
+                    ],
+                    "number": "14"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:451"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:3",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "4",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "5",
+                            "score": "4",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:666",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "X",
+                            "severity": "major",
+                            "skater": "away:3"
+                        }
+                    ],
+                    "number": "15"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:3",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:247"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:365",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "4",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "home:365"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:45",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "L",
+                            "severity": "major",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "A",
+                            "severity": "major",
+                            "skater": "away:46"
+                        }
+                    ],
+                    "number": "16"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:620"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:12",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:28",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "3",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:28"
+                        }
+                    ],
+                    "number": "17"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:10",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:10"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1101"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "4",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "5",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "6",
+                            "score": "5",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "7",
+                            "score": "4",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:666",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "lost",
+                            "skater": "away:666"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "P",
+                            "severity": "major",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "P",
+                            "severity": "major",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "B",
+                            "severity": "major",
+                            "skater": "away:666"
+                        }
+                    ],
+                    "number": "18"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1098"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:3"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:303",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:303"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:40"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:12",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "0",
+                            "skater": "home:12"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:28",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "5",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "3",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "call",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "X",
+                            "severity": "major",
+                            "skater": "home:1098"
+                        }
+                    ],
+                    "number": "19"
+                },
+                {
+                    "events": [
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "home:5150"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1098",
+                            "start_in_box": true
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "home:1098"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:59"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "home:1993"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "pivot",
+                            "skater": "away:45"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "enter box",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "exit box",
+                            "skater": "away:999"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:46"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "blocker",
+                            "skater": "away:223"
+                        },
+                        {
+                            "event": "lineup",
+                            "position": "jammer",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "home:23",
+                            "team": "home"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "4",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "4",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "4",
+                            "score": "4",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "5",
+                            "score": "3",
+                            "skater": "home:23"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "1",
+                            "score": "0",
+                            "skater": "away:28",
+                            "team": "away"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "2",
+                            "score": "4",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "3",
+                            "score": "4",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "4",
+                            "score": "4",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "pass",
+                            "number": "5",
+                            "score": "4",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "lead",
+                            "skater": "away:28"
+                        },
+                        {
+                            "event": "penalty",
+                            "penalty": "P",
+                            "severity": "major",
+                            "skater": "away:999"
+                        }
+                    ],
+                    "number": "20"
+                }
+            ]
+        }
+    },
+    "startTime": "19:00",
+    "teams": {
+        "away": {
+            "league": "Detroit Derby Girls",
+            "name": "All-Stars",
+            "persons": [
+                {
+                    "name": "Roxanna Hardplace",
+                    "number": "3",
+                    "role": "skater"
+                },
+                {
+                    "name": "Swift Justice",
+                    "number": "10",
+                    "role": "skater"
+                },
+                {
+                    "name": "Racer McChaseHer",
+                    "number": "28",
+                    "role": "skater"
+                },
+                {
+                    "name": "Murder City Mistress",
+                    "number": "40",
+                    "role": "skater"
+                },
+                {
+                    "name": "Feta Sleeze",
+                    "number": "45",
+                    "role": "skater"
+                },
+                {
+                    "name": "Fatal Femme",
+                    "number": "46",
+                    "role": "skater"
+                },
+                {
+                    "name": "Spanish Ass'assin",
+                    "number": "223",
+                    "role": "skater"
+                },
+                {
+                    "name": "boo D. livers",
+                    "number": "247",
+                    "role": "skater"
+                },
+                {
+                    "name": "Bruisie Siouxxx",
+                    "number": "303",
+                    "role": "skater"
+                },
+                {
+                    "name": "Lazer Beam",
+                    "number": "620",
+                    "role": "skater"
+                },
+                {
+                    "name": "Ally Sin Shoverland",
+                    "number": "666",
+                    "role": "skater"
+                },
+                {
+                    "name": "Ghetto Barbie",
+                    "number": "8",
+                    "role": "skater"
+                },
+                {
+                    "name": "U.S.S. Denterprise",
+                    "number": "999",
+                    "role": "skater"
+                },
+                {
+                    "name": "Meryl Slaughterburgh",
+                    "number": "MGS4",
+                    "role": "skater"
+                }
+            ]
+        },
+        "home": {
+            "league": "Ohio Roller Girls",
+            "name": "Charter Team",
+            "persons": [
+                {
+                    "name": "Paige Bleed",
+                    "number": "0125",
+                    "role": "skater"
+                },
+                {
+                    "name": "Outta My Wayman",
+                    "number": "10",
+                    "role": "skater"
+                },
+                {
+                    "name": "Amy Spears",
+                    "number": "1098",
+                    "role": "skater"
+                },
+                {
+                    "name": "Ava Tarr",
+                    "number": "1101",
+                    "role": "skater"
+                },
+                {
+                    "name": "Kitty Liquorbottom",
+                    "number": "12",
+                    "role": "skater"
+                },
+                {
+                    "name": "Pearl Rogi",
+                    "number": "138",
+                    "role": "skater"
+                },
+                {
+                    "name": "Bratislava Bruiser",
+                    "number": "1993",
+                    "role": "skater"
+                },
+                {
+                    "name": "Kill Basa",
+                    "number": "216",
+                    "role": "skater"
+                },
+                {
+                    "name": "Phoenix Bunz",
+                    "number": "23",
+                    "role": "skater"
+                },
+                {
+                    "name": "The Smacktivist",
+                    "number": "365",
+                    "role": "skater"
+                },
+                {
+                    "name": "Burnadeath",
+                    "number": "451",
+                    "role": "skater"
+                },
+                {
+                    "name": "Pippi Ripyourstockings",
+                    "number": "5150",
+                    "role": "skater"
+                },
+                {
+                    "name": "Loraine Acid",
+                    "number": "59",
+                    "role": "skater"
+                },
+                {
+                    "name": "Bigg Rigg",
+                    "number": "815",
+                    "role": "skater"
+                }
+            ]
+        },
+        "officials": {
+            "persons": []
+        }
+    },
+    "type": "game",
+    "venue": {
+        "city": "Columbus",
+        "name": "Ohio State Fairgrounds - Ohio Building",
+        "state": "OH"
+    },
+    "version": "1.0"
+}
