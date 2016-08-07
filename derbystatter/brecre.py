@@ -248,7 +248,7 @@ def crosscheck_pt_lt(book):
                         Error("Skater",skNum,"got major penalty (",penalty[0],") in jam",jamNumber,"but not in lineup for that jam")
 
 
-if __name__ == '__main__':
+def main():
     parser = OptionParser("usage: %prog [options] arg")
     parser.add_option("-f", "--file", dest="fname",
                       help="write report to FILE", metavar="FILE")
@@ -296,3 +296,6 @@ if __name__ == '__main__':
 
     print NumErrors, "Errors"
     print NumWarnings, "Warnings"
+
+if __name__ == '__main__':
+    main()
