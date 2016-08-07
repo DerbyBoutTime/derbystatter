@@ -19,7 +19,13 @@ setuptools.setup(
     version='0.0.2',
     author='Glen Andreas',
     author_email='derby@gandreas.com',
+    packages=setuptools.find_packages(exclude=['tests']),
     install_requires=INSTALL_REQUIRES,
     tests_require=TEST_REQUIRES,
-)
+    entry_points={
+        'console_scripts': [
+            'brecre = derbystatter.brecre:main'
+        ],
+    },
 
+)
