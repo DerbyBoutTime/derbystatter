@@ -1,30 +1,32 @@
 derbystatter: Python tools for working with WFTDA statbook spreadsheets
 =======================================================================
+
 These tools can read Excel WFTDA statbook spreadsheets, in either xlsx or xls
-format.
+format and report back possible errors such as duplicate skaters in lineups,
+jam mismatches on penalties, and more.
 
 Requirements
 ------------
 
-[xlrd](http://pypi.python.org/pypi/xlrd) - necessary for XLS support
-[py.test](http://pytest.org)
-[tox](https://testrun.org/tox/latest)
-xlsx.py (included) - adds limited xlsx capability
+- [xlrd](http://pypi.python.org/pypi/xlrd) - necessary for XLS support
+- [py.test](http://pytest.org)
+- [tox](https://testrun.org/tox/latest)
+- xlsx.py (included) - adds limited xlsx capability
 
 statbook.py
 -----------
 
-statbook.py provides the basic module to read the file as an object (instance
+`statbook.py` provides the basic module to read the file as an object (instance
 of class StatBook). The StatBook object includes direct references to the
 following sheets:
 
-    - IBRF
-    - Score
-    - Penalty
-    - LineUp
-    - JamTimer
-    - Actions
-    - Errors
+- IBRF
+- Score
+- Penalty
+- LineUp
+- JamTimer
+- Actions
+- Errors
 
 It creates other objects for the jamTimer (one per period) and the home and
 away teams. The teams then hold objects that reference the data contained in
@@ -46,12 +48,23 @@ It's recommended to use and create a [virtualenv](https://virtualenv.pypa.io/)
 to use with this project. This is easiest with
 [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/) and the included Makefile but not required.
 
-    mkvirtualenv statter
+    $ mkvirtualenv statter
     (statter) make deps
     Handling requirements...
     ... installs dependencies ...
     Installing test deps...
-    ... installs test dependencies ...    
+    ... installs test dependencies ...
+
+    # Run the tests with make test or tox
+    $ make test
+    $ tox
+
+To install on your system without virtualenv or make, you may use pip directly.
+
+    $ pip install -r requirements.txt
+
+    # (optional) install the test requirements
+    $ pip install -r test-requirements.txt
 
 Usage
 -----
