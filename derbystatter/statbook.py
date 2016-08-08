@@ -62,13 +62,15 @@ class StatBookVersion:
     """An abstraction of the different versions of the statbook"""
 
     def __init__(self, workbook):
-        try:
-            self.version = workbook.sheet_by_name("Read ME").cell(2,0).value
-        except Exception:
+        sheet_names = ['Read ME', 'Read_Me', 'Read Me']
+        for name in sheet_names:
             try:
-                self.version = workbook.sheet_by_name("Read_Me").cell(2,0).value
-            except Exception:
-                self.version = workbook.sheet_by_name("Read Me").cell(2,0).value            
+                self.version = workbook.sheet_by_name(name).cell(2,0).value
+                break
+            except KeyError:
+                pass
+
+        assert self.version, "Failed to get version from Read Me sheet"
 
         # set default values
         self.maxNumJams = 20
@@ -331,14 +333,24 @@ class StatBook:
         self.Score = self.workbook.sheet_by_name("Score")
         self.Penalty = self.workbook.sheet_by_name("Penalties")
         self.LineUp = self.workbook.sheet_by_name("Lineups")
-        try:
-            self.JamTimer = self.workbook.sheet_by_name(self.version.periodTimerSheetName)
-        except Exception:
-            self.JamTimer = self.workbook.sheet_by_name(self.version.periodTimerSheetName.replace(" ","_"))
+
+        # try for optional Jam/Period Timer sheets
+        jt_names = [self.version.periodTimerSheetName, self.version.periodTimerSheetName.replace(' ', '_')]
+        for name in jt_names:
+            try:
+                self.JamTimer = self.workbook.sheet_by_name(name)
+                self.jamTimer = (JamTimer(self.JamTimer, 0,0), JamTimer(self.JamTimer, 0, 1))
+                break
+            except KeyError:
+                pass
+
         if self.version.hasActionsErrors:
-            self.Actions = self.workbook.sheet_by_name("Actions")
-            self.Errors = self.workbook.sheet_by_name("Errors")
-        self.jamTimer = (JamTimer(self.JamTimer, 0,0), JamTimer(self.JamTimer, 0, 1))
+            try:
+                self.Actions = self.workbook.sheet_by_name("Actions")
+                self.Errors = self.workbook.sheet_by_name("Errors")
+            except KeyError:
+                pass
+
         self.home = HomeTeam(self)
         self.away = AwayTeam(self)
         if self.home.league == self.away.league: # if same league, just use team name
