@@ -13,7 +13,6 @@ else:
 
 import zipfile
 
-
 XL_CELL_EMPTY = 0
 XL_CELL_TEXT = 1
 XL_CELL_NUMBER = 2
@@ -24,10 +23,9 @@ XL_CELL_BLANK = 6
 
 
 class xlsx:
-
     def __init__(self, fpath):
         """Open the zip file, and set up lazy caches for the xml files and specific sheets"""
-        self.zf = zipfile.ZipFile(fpath,'r')
+        self.zf = zipfile.ZipFile(fpath, 'r')
         self.xmlFiles = {}
         self.sheets = {}
 
@@ -70,17 +68,18 @@ class xlsx:
                         #                    print sheet.attributes._attrs
                         childName = relMap[sheet.get(nsP + 'id')]
                         sheetName = sheet.get('name')
-                        self.sheets[sheetName] = { 'path':childName }
+                        self.sheets[sheetName] = {'path': childName}
             else:
                 for rel in workbookRels.getElementsByTagName('Relationship'):
-                    relMap[rel.attributes['Id'].value] = rel.attributes['Target'].value
+                    relMap[rel.attributes['Id'].value] = rel.attributes[
+                        'Target'].value
                 for sheets in workbook.getElementsByTagName('sheets'):
                     for sheet in sheets.getElementsByTagName('sheet'):
                         #print sheet.toxml()
                         #                    print sheet.attributes._attrs
                         childName = relMap[sheet.attributes['r:id'].value]
                         sheetName = sheet.attributes['name'].value
-                        self.sheets[sheetName] = { 'path':childName }
+                        self.sheets[sheetName] = {'path': childName}
         value = self.sheets[name]
         if not value.has_key('sheet'):
             sheetXML = self.xml('xl/' + value['path'])
@@ -89,10 +88,10 @@ class xlsx:
             value['sheet'] = sheet
             # try to load rels
             relsPathParts = value['path'].split('/')
-            relsPathParts.insert(-1,'_rels')
+            relsPathParts.insert(-1, '_rels')
             relsPathParts[-1] = relsPathParts[-1] + ".rels"
             relXML = self.xml('xl/' + '/'.join(relsPathParts))
-            value['rels' ] = relXML
+            value['rels'] = relXML
         return value['sheet']
 
     def relsForSheet(self, sheet):
@@ -120,14 +119,18 @@ class xlsxSheet:
             import os
             retval = {}
             for rel in rels.findall(nsR + 'Relationship'):
-                if rel.get('Type') == "http://schemas.openxmlformats.org/officeDocument/2006/relationships/comments":
+                if rel.get(
+                        'Type'
+                ) == "http://schemas.openxmlformats.org/officeDocument/2006/relationships/comments":
                     baseDir = os.path.split(self.path)[0]
-                    commentPath = os.path.normpath(os.path.join(baseDir,rel.get('Target')))
+                    commentPath = os.path.normpath(
+                        os.path.join(baseDir, rel.get('Target'))
+                    )
                     commentsXML = self.book.xml('xl/' + commentPath)
-                    commentList = commentsXML.find(nsS+'commentList')
-                    for comment in commentList.findall(nsS+'comment'):
+                    commentList = commentsXML.find(nsS + 'commentList')
+                    for comment in commentList.findall(nsS + 'comment'):
                         commentText = ""
-                        for t in comment.findall(nsS+'text'):
+                        for t in comment.findall(nsS + 'text'):
                             for i in t.itertext():
                                 commentText += i
                         retval[comment.get('ref')] = commentText
@@ -149,7 +152,8 @@ class xlsxSheet:
                         rname = elc.get('r')
                         cols[rname[:-rlen]] = elc
             else:
-                for el in self.xml.getElementsByTagName('sheetData')[0].getElementsByTagName('row'):
+                for el in self.xml.getElementsByTagName('sheetData')[
+                        0].getElementsByTagName('row'):
                     rnum = int(el.attributes['r'].value)
                     rlen = len(el.attributes['r'].value)
                     while len(self.rows) <= rnum:
@@ -169,20 +173,20 @@ class xlsxSheet:
 
     def cell(self, rowIndex, colIndex):
         """Get the data of a specific cell by row and column (zero based)"""
-        row = self.row(rowIndex+1)
+        row = self.row(rowIndex + 1)
         colName = self.colName(colIndex)
         if not row.has_key(colName):
             return empty_cell
         cell = row[colName]
         if USE_EL_TREE:
             if cell.get('si'):
-                print "Cell",colName,rowIndex+1,"has si:",cell.text
+                print "Cell", colName, rowIndex + 1, "has si:", cell.text
             v = cell.findall(nsS + 'v')
         else:
             if cell.attributes.has_key('si'):
-                print "Cell",colName,rowIndex+1,"has si:",cell.toxml()
+                print "Cell", colName, rowIndex + 1, "has si:", cell.toxml()
             v = cell.getElementsByTagName('v')
-        if not v:       
+        if not v:
             return empty_cell
         if USE_EL_TREE:
             v = v[0].text
@@ -190,7 +194,9 @@ class xlsxSheet:
                 cellType = cell.get('t')
                 if cellType == 's':
                     v = int(v)
-                    return xlsxValue(XL_CELL_TEXT,self.book.sharedStringWithIndex(v)[0].text)
+                    return xlsxValue(
+                        XL_CELL_TEXT, self.book.sharedStringWithIndex(v)[0].text
+                    )
                 if cellType == 'str':
                     return xlsxValue(XL_CELL_TEXT, v)
         else:
@@ -199,16 +205,20 @@ class xlsxSheet:
                 cellType = cell.attributes['t'].value
                 if cellType == 's':
                     v = int(v)
-                    return xlsxValue(XL_CELL_TEXT,self.book.sharedStringWithIndex(v).firstChild.firstChild.toxml())
+                    return xlsxValue(
+                        XL_CELL_TEXT, self.book.sharedStringWithIndex(
+                            v
+                        ).firstChild.firstChild.toxml()
+                    )
                 if cellType == 'str':
                     return xlsxValue(XL_CELL_TEXT, v)
-        return xlsxValue(XL_CELL_NUMBER,float(v))
+        return xlsxValue(XL_CELL_NUMBER, float(v))
 
 
 class xlsxValue:
     """Represents the contents of a given cell in a sheet, as a type and value"""
 
-    def __init__(self,type,value):
+    def __init__(self, type, value):
         self.type = type
         self.value = value
 
@@ -218,25 +228,28 @@ class xlsxValue:
         if self.type == XL_CELL_TEXT:
             return '"' + self.value + '"'
         if self.type == XL_CELL_NUMBER:
-            return "%g" % (self.value,)
+            return "%g" % (self.value, )
         if self.type == XL_CELL_ERROR:
             return "<ERROR " + self.value + ">"
         return "<???>"
 
-empty_cell = xlsxValue(XL_CELL_EMPTY,u'')
+
+empty_cell = xlsxValue(XL_CELL_EMPTY, u'')
+
 
 def open_workbook(f):
     return xlsx(f)
 
 
 if __name__ == '__main__':
-    x = xlsx('/Users/gandreas/Documents/STATS-2014-04-27-NorthStarRollerGirls_vs_OldCapitolCityRollerGirls.xlsx')
+    x = xlsx(
+        '/Users/gandreas/Documents/STATS-2014-04-27-NorthStarRollerGirls_vs_OldCapitolCityRollerGirls.xlsx'
+    )
     IBRF = x.sheet_by_name("IGRF")
 
-    print IBRF.cell(2,1)
-    print IBRF.cell(4,1)
-    print IBRF.cell(10,1)
+    print IBRF.cell(2, 1)
+    print IBRF.cell(4, 1)
+    print IBRF.cell(10, 1)
     print IBRF.allComments()
     Lineups = x.sheet_by_name('Lineups')
-    print Lineups.cell(0,0)
-    
+    print Lineups.cell(0, 0)
