@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/WFTDA/derbystatter.svg?style=svg)](https://circleci.com/gh/WFTDA/derbystatter)
+
 derbystatter: Python tools for working with WFTDA statbook spreadsheets
 =======================================================================
 
